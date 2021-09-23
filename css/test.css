@@ -1,0 +1,39 @@
+/* Tab Links */
+.tabs {
+  display: flex;
+}
+.tablinks {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.2s ease;
+  margin-right: 10px;
+}
+.tablinks:hover {
+  background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
+  color: #044934;
+}
+/* Tab active */
+.tablinks.active {
+  background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
+  color: #044934;
+}
+
+/* tab content */
+.tabcontent {
+  display: none;
+}
+/* Text*/
+.tabcontent p {
+  color: #044934;
+  font-size: 16px;
+}
+/* tab content active */
+.tabcontent.active {
+  display: block;
+}
