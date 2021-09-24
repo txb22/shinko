@@ -78,6 +78,7 @@
   .form-dk .content-form .text {
     font-size: 1.25rem;
     line-height: 1.5;
+    margin-top: 0.5rem;
   }
   .value .text-content,
   .products .text-content .text {
@@ -128,6 +129,8 @@
   }
   .box-text_ {
     margin-left: 0;
+    max-width: none;
+    text-align: center;
   }
   .box-text_ .box-text__ .box-img {
     text-align: center;
@@ -143,7 +146,10 @@
     margin-bottom: 4rem;
   }
   .box-review .box-img {
-    margin-top: -15%;
+    margin-top: -8%;
+  }
+  .box-review ._b {
+    margin-top: -20%;
   }
   .box-service {
     max-height: 20rem;
@@ -196,8 +202,42 @@
     box-shadow: 0px 0px 10px rgb(4 73 52 / 10%);
     margin-bottom: 1rem;
   }
+  .slide-home .box_content .inner {
+    width: 100%;
+    background: none;
+    border: none;
+  }
+  .slide-home .box_content {
+    left: 0;
+  }
+  .btn-slide {
+    display: none;
+  }
+  .slide-home .box_content .inner .name {
+    font-size: 1rem;
+  }
+  .slide .box_content .inner {
+    padding: 1.5rem;
+  }
+  .footer .social {
+    justify-content: center;
+  }
+  .box-technology .text {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .banner-box {
+    padding-top: 0;
+  }
 }
 @media (max-width: 768px) {
+  .new_ {
+    width: 50%;
+    margin-right: 0.5rem;
+  }
+  .box-new {
+    display: flex;
+  }
   .tablinks {
     width: 46%;
     font-size: 0.675rem;
@@ -249,6 +289,20 @@
   .item .box-text {
     padding: 0.5rem;
   }
+  .box-business .caption {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+  .box-business .caption .text {
+    font-size: 0.75rem;
+  }
+
+  .box-icon .box .text {
+    font-size: 0.75rem;
+  }
+  .box-review .box-img {
+    margin-top: -15%;
+  }
 }
 @media (min-width: 480px) and (max-width: 1024px) {
   .products .row-cols-5 > * {
@@ -256,16 +310,10 @@
     width: 33.3%;
     padding: 0 0.5rem;
   }
-  .new_ {
-    width: 50%;
-    margin-right: 0.5rem;
-  }
-  .box-new {
+
+  /* .box-2 {
     display: flex;
-  }
-  .box-2 {
-    display: flex;
-  }
+  } */
   .business_ {
     display: block;
     padding: 1.5rem;
@@ -284,9 +332,28 @@
   .box-business {
     margin-bottom: 1rem;
   }
+  .slide .box_content .inner {
+    padding: 2.5rem;
+  }
 }
 @media (min-width: 1024px) {
   .box_top {
     margin-top: 2rem;
+  }
+}
+@media (max-width: 1441px) {
+}
+@media (max-width: 575.98px) {
+  .section_philosophy .item_philosophy .philosophy__content .title::after {
+    height: 1px;
+  }
+
+  .section_philosophy .item_philosophy:hover .philosophy__content .description {
+    margin-top: 0.5rem;
+  }
+}
+@media (min-width: 1601px) {
+  .item .box-text {
+    padding: 4rem 2rem;
   }
 }

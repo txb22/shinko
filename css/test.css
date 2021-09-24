@@ -1,39 +1,52 @@
-/* Tab Links */
-.tabs {
-  display: flex;
+box-img {
+  width: 300px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
 }
-.tablinks {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 100%;
-  padding: 1rem;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: 0.2s ease;
-  margin-right: 10px;
+box-img:hover + span {
+  bottom: -36px;
+  opacity: 1;
 }
-.tablinks:hover {
-  background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
-  color: #044934;
+/* Shine */
+.box-product box-img {
+  position: relative;
 }
-/* Tab active */
-.tablinks.active {
-  background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
-  color: #044934;
-}
-
-/* tab content */
-.tabcontent {
-  display: none;
-}
-/* Text*/
-.tabcontent p {
-  color: #044934;
-  font-size: 16px;
-}
-/* tab content active */
-.tabcontent.active {
+.box-product box-img::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
   display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.box-product box-img:hover::before {
+  -webkit-animation: shine 0.75s;
+  animation: shine 0.75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
 }

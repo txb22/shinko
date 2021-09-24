@@ -24,6 +24,10 @@ a {
 .mb_30 {
   margin-bottom: 1.5rem;
 }
+.logo img {
+  max-width: 70px;
+  padding: 0.5rem;
+}
 header {
   background-image: url(../images/348\ [Converted]-01\ 1.png);
   background-size: cover;
@@ -32,6 +36,7 @@ header {
 .nav-menu {
   text-align: center;
   display: flex;
+  justify-content: flex-end;
 }
 .nav-menu ul {
   display: flex;
@@ -49,11 +54,18 @@ header {
   line-height: 1.5;
   font-size: 1rem;
 }
+.search1 {
+  display: none;
+}
 .search {
   padding-left: 1rem;
 }
 .banner {
   padding: 4rem 0;
+}
+.banner-box {
+  text-align: left;
+  padding-top: 2rem;
 }
 .banner-box .title .text {
   font-family: Lato;
@@ -103,6 +115,9 @@ header {
   font-size: 1rem;
   line-height: 1.5;
   color: #044934;
+}
+.banner-box .btn-banner {
+  fill: #044934;
 }
 .service {
   background-image: url(../images/Vector\ 55.png);
@@ -262,11 +277,11 @@ header {
 }
 .products {
   padding: 4rem 0;
-
-  /* background-image: url(../images/SL_042620_30310_29\ 1.png); */
-  /* background-size: cover;
-  mix-blend-mode: overlay; */
-  background-color: #044a35;
+  background-image: url(../images/283_Abstract\ Shiny\ Geometric\ Technology\ Background\ 1.png);
+  background-size: contain;
+  /* mix-blend-mode: overlay; */
+  background-color: #044934;
+  background-repeat: no-repeat;
 }
 .products .title .text {
   font-family: Lato;
@@ -292,7 +307,7 @@ header {
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: #044934;
   position: relative;
@@ -300,6 +315,14 @@ header {
   transform: translateX(-50%);
   border: none;
   padding: 0.5rem 1.5rem;
+}
+.products button:hover {
+  color: #f8e681;
+  background: #fff;
+  transition: 0.3s all 0s;
+}
+.products button svg {
+  fill: #044934;
 }
 .box-product {
   background: linear-gradient(
@@ -314,7 +337,7 @@ header {
 }
 .box-product .box-img {
   text-align: center;
-  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .box-product .title-product .text {
   font-family: Lato;
@@ -608,6 +631,10 @@ header {
   display: inline-block;
   margin-bottom: 1rem;
 }
+.new-conttent .title-p .text:hover {
+  color: #044934;
+  transition: 0.3s all 0s;
+}
 .new-conttent .content-p {
   font-family: Lato;
   font-style: normal;
@@ -634,6 +661,7 @@ header {
 .new-conttent .btn-new:hover {
   background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
   border-radius: 99px;
+  transition: 0.3s all 0s;
 }
 .box-new .box-img img {
   /* max-width: 20rem; */
@@ -684,7 +712,7 @@ footer {
 }
 .footer a:hover {
   color: #f8e681;
-  transition: 0.3s all 0;
+  transition: 0.3s all 0s;
 }
 .introduce ul,
 .product ul {
@@ -753,7 +781,7 @@ footer {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -817,4 +845,186 @@ footer {
 .tabcontent.active {
   display: block;
   margin-bottom: 1rem;
+}
+#button {
+  display: inline-block;
+  background-color: #044a35;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  /* border-radius: 50%; */
+  position: fixed;
+  bottom: 47px;
+  right: 15px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  z-index: 999999999;
+  border: 2px solid #fff;
+}
+#button::after {
+  content: "\f062";
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 37px;
+  color: #fff;
+}
+#button:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #044a35;
+  transition: 0.3s all 0s;
+}
+#button:active {
+  background-color: #044a35;
+  transition: 0.3s all 0s;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6000;
+  display: none;
+}
+.menu-mobile .wrapper {
+  background-color: #fff;
+  height: 70px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.5);
+}
+
+.menu-mobile #bt-menu-mobile {
+  border: none;
+  background: none;
+  width: 40px;
+  float: right;
+  margin: 20px 20px 0 0;
+  position: relative;
+  height: 30px;
+  cursor: pointer;
+}
+.menu-mobile #bt-menu-mobile span {
+  background-color: #1b7d6d;
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 100%;
+}
+.menu-mobile #bt-menu-mobile span.top {
+  top: 0;
+}
+.menu-mobile #bt-menu-mobile span.middle {
+  top: 50%;
+  margin-top: -2px;
+}
+.menu-mobile #bt-menu-mobile span.bottom {
+  top: 100%;
+  margin-top: -2px;
+}
+
+#wrapper-menu-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+#wrapper-menu-mobile .wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #044a35;
+  right: -100%;
+  z-index: 10;
+}
+.menu-mobile .wrapper > a {
+  font-size: 20px;
+  padding: 12px 0 0 10px;
+  float: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+#wrapper-menu-mobile ul {
+  /* padding: 0 20px; */
+  position: relative;
+  height: 100%;
+  text-align: left;
+  /* overflow-y: scroll; */
+  padding: 0;
+}
+#wrapper-menu-mobile ul h1 {
+  margin: 0;
+  padding-left: 15px;
+}
+#wrapper-menu-mobile ul li {
+  padding: 10px 0;
+  /* border-top: 1px solid #fff; */
+  list-style: none;
+}
+#wrapper-menu-mobile ul li.first {
+  border: none;
+  background-color: #044934;
+  border-bottom: 1px solid #fff;
+}
+#wrapper-menu-mobile ul li.first img {
+  /* padding-left: 20px; */
+  /* width: 40%; */
+  max-width: 10%;
+}
+#wrapper-menu-mobile ul li a {
+  padding-left: 1rem;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.wrapper .form button {
+  background: none;
+  border: none;
+  background-color: #c73c31;
+  /* float: right; */
+  position: absolute;
+  right: 8px;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+#wrapper-menu-mobile ul li span {
+  /* float: left; */
+  margin: 5px 0 0 10px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu-mobile .block-menu-mobile {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+#wrapper-menu-mobile #bt-fechar-menu {
+  fill: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  right: 7%;
+  font-size: 30px;
+  background: none;
+  border: none;
 }

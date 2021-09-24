@@ -11,22 +11,25 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
+    <!-- Back to top button -->
+    <a id="button"></a>
     <header>
         <div class="container">
             <div class="header">
                 <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-4">
+                    <div class="col-lg-2 col-10">
                         <div class="logo">
                             <a href="" class="">
                                 <img src="images/Mask Group (11).png" alt="">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-10 col-2">
                         <div class="nav-menu">
                             <ul>
                                 <li><a href="">Trang chủ</a></li>
@@ -40,42 +43,170 @@
                                 <i class="fal fa-search"></i>
                             </div>
                         </div>
+                        <div class="search1">
+                            <button id="bt-menu-mobile" class="bar-menu"><svg height="30px" viewBox="0 -53 384 384"
+                                    width="30px" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+                                    <path
+                                        d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+                                    <path
+                                        d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0" />
+                                </svg></button>
+                        </div>
+                        <div id="wrapper-menu-mobile">
+                            <div class="wrapper">
+                                <ul>
+                                    <li class="first">
+                                        <a href="">
+                                            <img src="images/Mask Group (11).png" alt="">
+                                        </a>
+                                        <button id="bt-fechar-menu">
+                                            <svg height="20px" viewBox="0 0 329.26933 329" width="20px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 
+                                                                                8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 
+                                                                                0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 
+                                                                                15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844
+                                                                                 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" />
+                                            </svg>
+                                            </i></button>
+                                        <div class="clear"></div>
+                                    </li>
 
+                                    <li><a href="">Home</a></li>
+                                </ul>
+                            </div>
+                            <div class="block-menu-mobile"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <section class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="banner-box">
-                            <div class="title">
-                                <a href="" class="text">
-                                    Shinko
-                                </a>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="banner-box">
+                                        <div class="title">
+                                            <a href="" class="text">
+                                                Shinko
+                                            </a>
+                                        </div>
+                                        <div class="content-banner">
+                                            <a href="" class="text">
+                                                Đơn vị sản xuất và cung cấp thiết bị vệ sinh hàng đầu
+                                            </a>
+                                        </div>
+                                        <div class="text_">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec fusce dui fames
+                                            enim
+                                            placerat
+                                            tristique. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit.
+                                        </div>
+                                        <button class="btn-banner">Xem thêm
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"
+                                                width="20" height="20">
+                                                <path
+                                                    d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="box-img"><a href="" class="c-img">
+                                            <img src="images/Group111.png" alt="">
+                                        </a></div>
+                                </div>
                             </div>
-                            <div class="content-banner">
-                                <a href="" class="text">
-                                    Đơn vị sản xuất và cung cấp thiết bị vệ sinh hàng đầu
-                                </a>
-                            </div>
-                            <div class="text_">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec fusce dui fames enim
-                                placerat
-                                tristique. Lorem ipsum dolor
-                                sit amet, consectetur adipiscing elit.
-                            </div>
-                            <input type="submit" class="btn-banner" value="Xem thêm">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="box-img"><a href="" class="c-img">
-                                <img src="images/Group111.png" alt="">
-                            </a></div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="banner-box">
+                                        <div class="title">
+                                            <a href="" class="text">
+                                                Shinko
+                                            </a>
+                                        </div>
+                                        <div class="content-banner">
+                                            <a href="" class="text">
+                                                Đơn vị sản xuất và cung cấp thiết bị vệ sinh hàng đầu
+                                            </a>
+                                        </div>
+                                        <div class="text_">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec fusce dui fames
+                                            enim
+                                            placerat
+                                            tristique. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit.
+                                        </div>
+                                        <button class="btn-banner">Xem thêm
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"
+                                                width="20" height="20">
+                                                <path
+                                                    d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="box-img"><a href="" class="c-img">
+                                            <img src="images/Group111.png" alt="">
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="banner-box">
+                                        <div class="title">
+                                            <a href="" class="text">
+                                                Shinko
+                                            </a>
+                                        </div>
+                                        <div class="content-banner">
+                                            <a href="" class="text">
+                                                Đơn vị sản xuất và cung cấp thiết bị vệ sinh hàng đầu
+                                            </a>
+                                        </div>
+                                        <div class="text_">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec fusce dui fames
+                                            enim
+                                            placerat
+                                            tristique. Lorem ipsum dolor
+                                            sit amet, consectetur adipiscing elit.
+                                        </div>
+                                        <button class="btn-banner">Xem thêm
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24"
+                                                width="20" height="20">
+                                                <path
+                                                    d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6">
+                                    <div class="box-img"><a href="" class="c-img">
+                                            <img src="images/Group111.png" alt="">
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
     </header>
 
@@ -242,76 +373,90 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="box-2">
-                        <div class="box-text_">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="box-text__">
-                                        <div class="box-img">
-                                            <a href=""><img src="images/Group 3036.png" alt=""></a>
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-6">
+                                <div class="box-text_">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="box-text__">
+                                                <div class="box-img">
+                                                    <a href=""><img src="images/Group 3036.png" alt=""></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-10">
-                                    <div class="text__">
-                                        <div class="title">
-                                            <a href="" class="text">
-                                                Thiết bị chính hãng
-                                            </a>
-                                        </div>
-                                        <div class="text">
-                                            Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông tin của
-                                            nhà sản xuất cũng như các chế độ bảo hành của
-                                            hãng
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-text_ ml_0">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="box-text__">
-                                        <div class="box-img">
-                                            <a href=""><img src="images/Group 3733.png" alt=""></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-10">
-                                    <div class="text__">
-                                        <div class="title">
-                                            <a href="" class="text">
-                                                Giải pháp chuyên sâu
-                                            </a>
-                                        </div>
-                                        <div class="text">
-                                            Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông tin của
-                                            nhà sản xuất cũng như các chế độ bảo hành của
-                                            hãng
+                                        <div class="col-lg-10">
+                                            <div class="text__">
+                                                <div class="title">
+                                                    <a href="" class="text">
+                                                        Thiết bị chính hãng
+                                                    </a>
+                                                </div>
+                                                <div class="text">
+                                                    Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông
+                                                    tin
+                                                    của
+                                                    nhà sản xuất cũng như các chế độ bảo hành của
+                                                    hãng
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box-text_">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="box-text__">
-                                        <div class="box-img">
-                                            <a href=""><img src="images/Group 3734.png" alt=""></a>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="box-text_ ml_0">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="box-text__">
+                                                <div class="box-img">
+                                                    <a href=""><img src="images/Group 3733.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="text__">
+                                                <div class="title">
+                                                    <a href="" class="text">
+                                                        Giải pháp chuyên sâu
+                                                    </a>
+                                                </div>
+                                                <div class="text">
+                                                    Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông
+                                                    tin
+                                                    của
+                                                    nhà sản xuất cũng như các chế độ bảo hành của
+                                                    hãng
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-10">
-                                    <div class="text__">
-                                        <div class="title">
-                                            <a href="" class="text">
-                                                Dịch vụ chu đáo
-                                            </a>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <div class="box-text_">
+                                    <div class="row">
+                                        <div class="col-lg-2">
+                                            <div class="box-text__">
+                                                <div class="box-img">
+                                                    <a href=""><img src="images/Group 3734.png" alt=""></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="text">
-                                            Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông tin của
-                                            nhà sản xuất cũng như các chế độ bảo hành của
-                                            hãng
+                                        <div class="col-lg-10">
+                                            <div class="text__">
+                                                <div class="title">
+                                                    <a href="" class="text">
+                                                        Dịch vụ chu đáo
+                                                    </a>
+                                                </div>
+                                                <div class="text">
+                                                    Tất cả các thiết bị đều được nhập khẩu chính hãng với đầy đủ thông
+                                                    tin
+                                                    của
+                                                    nhà sản xuất cũng như các chế độ bảo hành của
+                                                    hãng
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -401,7 +546,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -444,7 +589,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -486,7 +631,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -528,7 +673,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -570,7 +715,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -612,7 +757,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -654,7 +799,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -696,7 +841,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -738,7 +883,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -780,7 +925,7 @@
                 <div class="col mb_30">
                     <div class="box-product">
                         <div class="box-img">
-                            <a href="" class="">
+                            <a href="" class="c-img">
                                 <img src="images/—Pngtree—toilet picture_5628728 1.png" alt="">
                             </a>
                         </div>
@@ -820,7 +965,12 @@
                     </div>
                 </div>
             </div>
-            <button>Xem thêm</button>
+            <button>Xem thêm
+                <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="20" height="20">
+                    <path
+                        d="M18,12h0a2,2,0,0,0-.59-1.4l-4.29-4.3a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L15,11H5a1,1,0,0,0,0,2H15l-3.29,3.29a1,1,0,0,0,1.41,1.42l4.29-4.3A2,2,0,0,0,18,12Z" />
+                </svg>
+            </button>
         </div>
     </section>
     <section class="client">
@@ -1106,9 +1256,9 @@
         <div class="box-x">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="box-review">
-                            <div class="box-img">
+                            <div class="box-img _b">
                                 <a href="" class=""><img src="images/Park-Shin-Hye-nhan-hau-e1601215676616 1.png"
                                         alt=""></a>
                             </div>
@@ -1125,9 +1275,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-sm-6">
                         <div class="box-review">
-                            <div class="box-img">
+                            <div class="box-img _b">
                                 <a href="" class=""><img
                                         src="images/202007300408124006-8d0d3279-3c90-4b0a-b483-aafe30b5dab9 1.png"
                                         alt="">
@@ -1182,7 +1332,7 @@
                 </a>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="box-new">
                         <div class="new_">
                             <div class="row">
@@ -1255,7 +1405,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-sm-12">
                     <div class="box-img"><a href="" class="c-img"><img src="images/phòng tắm đứng 1.png" alt=""></a>
                     </div>
                 </div>
@@ -1269,7 +1419,7 @@
 
                     <div class="col-lg-8">
                         <div class="row">
-                            <div class="col-lg-4 col-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="introduce">
                                     <div class="title"><a href="" class="text">GIỚI THIỆU</a></div>
                                     <ul>
@@ -1280,7 +1430,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-6">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="introduce">
                                     <div class="title"><a href="" class="text">GIỚI THIỆU</a></div>
                                     <ul>
@@ -1291,7 +1441,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-4">
                                 <div class="product">
                                     <div class="title"><a href="" class="text">SẢN PHẨM</a></div>
                                     <ul>
@@ -1328,7 +1478,7 @@
 
                         <div class="box-contact_">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="contact__">
                                         <a href="mailto:hotro.shinko@gmail.com" class="email">
                                             <i class="fal fa-envelope"></i>hotro.shinko@gmail.com
@@ -1338,7 +1488,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="box-adress">
                                         <a href="">
                                             <i class="far fa-map-marker-alt"></i> Số 9 Ngõ 3/2 Nhân Hòa, Nhân Chính,
