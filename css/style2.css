@@ -29,6 +29,16 @@ a {
   padding: 0.5rem;
 }
 header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 5%);
+}
+header,
+.banner {
   background-image: url(../images/348\ [Converted]-01\ 1.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -514,6 +524,9 @@ header {
   text-align: center;
   position: relative;
 }
+.review .swiper {
+  padding: 4rem 1.5rem 1rem 1.5rem;
+}
 .review .title .text {
   font-size: 2rem;
   color: #fff;
@@ -534,21 +547,24 @@ header {
 .box-review {
   text-align: center;
   background: #ffffff;
-  box-shadow: 0px 24px 40px rgba(4, 73, 52, 0.1);
-  padding: 1rem;
+  box-shadow: 0 2px 5px 2px rgb(0 0 0 / 5%);
+  padding: 4rem 1rem 1rem 1rem;
   position: relative;
 }
 .box-review .box-img {
-  position: relative;
-  margin-top: -20%;
+  position: absolute;
+  margin-top: -33%;
   margin-bottom: 1rem;
+  transform: translateX(-50%);
+  left: 50%;
 }
 .box-review .box-img img {
   border-radius: 50%;
+  width: auto;
 }
-.review .top {
+/* .review .top {
   margin-bottom: 3rem;
-}
+} */
 .box-review .text-review {
   font-family: Lato;
   font-style: normal;
@@ -588,12 +604,24 @@ header {
   font-size: 0.875rem;
   line-height: 1.25;
 }
+.review .swiper-button-prev:after,
+.review .swiper-button-next:after {
+  font-size: 1rem;
+  color: #044934;
+  background: linear-gradient(90deg, #c19d6b 0%, #f5e89f 52.08%, #c3a068 100%);
+  padding: 0.5rem 0.75rem;
+  border-radius: 50%;
+}
+.review .swiper-slide {
+  max-width: 100%;
+}
 .box-x {
   position: absolute;
   width: 100%;
+  margin-top: -1rem;
 }
 .new {
-  margin-top: 6rem;
+  margin-top: 10rem;
   padding: 4rem 0;
 }
 .new .title .text {

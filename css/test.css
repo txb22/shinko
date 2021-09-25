@@ -1,52 +1,75 @@
-box-img {
-  width: 300px;
-  height: 200px;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  overflow: hidden;
-}
-box-img:hover + span {
-  bottom: -36px;
-  opacity: 1;
-}
-/* Shine */
-.box-product box-img {
+.header .menu {
+  margin-top: 25px;
   position: relative;
 }
-.box-product box-img::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
+.menu ul {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+.menu ul li {
+  font-size: 16px;
+  background: #fff;
+  position: relative;
+  list-style: none;
+}
+.menu ul li a {
   display: block;
+  text-transform: uppercase;
+  color: #000;
+  padding: 14px 18px 13px 15px;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  background: #164e62;
+}
+.menu ul li i {
+  color: #ffff;
+  position: absolute;
+  font-size: 12px;
+  z-index: 99;
+}
+.menu ul li > i {
+  right: 3px;
+}
+.menu ul li ul li i {
+  right: 15px;
+}
+
+.menu ul li ul {
+  position: absolute;
+  min-width: 220px;
+  z-index: 1;
+  padding: 0;
+  display: block;
+}
+.menu ul li:hover a {
+  display: block;
+}
+.menu ul li ul li a {
+  background: rgba(22, 78, 98, 0.85);
+  display: none;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-left: solid 1px rgba(255, 255, 255, 0.3);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+}
+/* ul > li:first-child:before {
   content: "";
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-bottom: 51px solid #323131;
+  border-left: 50px solid transparent;
+  right: 100%;
 }
-.box-product box-img:hover::before {
-  -webkit-animation: shine 0.75s;
-  animation: shine 0.75s;
-}
-@-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
-}
-@keyframes shine {
-  100% {
-    left: 125%;
-  }
+.menu ul > li:first-child:hover:before {
+  border-bottom: 51px solid #164e62;
+} */
+.icon-menu {
+  display: none;
 }

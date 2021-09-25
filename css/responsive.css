@@ -35,6 +35,9 @@
   .logo img {
     width: 100%;
   }
+  .menu {
+    display: none;
+  }
   .nav-menu {
     display: none;
   }
@@ -229,15 +232,16 @@
   .banner-box {
     padding-top: 0;
   }
+  .slide-home .box_content .inner .text_content {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
-  .new_ {
+  /* .new_ {
     width: 50%;
     margin-right: 0.5rem;
-  }
-  .box-new {
-    display: flex;
-  }
+  } */
+
   .tablinks {
     width: 46%;
     font-size: 0.675rem;
@@ -294,9 +298,17 @@
     padding-left: 1rem;
   }
   .box-business .caption .text {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
-
+  .value .text-content {
+    margin-bottom: 0;
+  }
+  .banner-box {
+    position: absolute;
+  }
+  .banner-box .text_ {
+    display: none;
+  }
   .box-icon .box .text {
     font-size: 0.75rem;
   }
@@ -310,7 +322,9 @@
     width: 33.3%;
     padding: 0 0.5rem;
   }
-
+  .box-new {
+    display: flex;
+  }
   /* .box-2 {
     display: flex;
   } */
